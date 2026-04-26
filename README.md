@@ -3,7 +3,7 @@
 > *Personal woodworking — segmented turning, tables, instruments, and assorted craft pieces built outside of professional engineering work. The portfolio of an engineer who spends evenings and weekends in the shop.*
 
 ![Hero photo](images/00-hero-woodworking.jpg)
-*(placeholder)*
+*A cross-section of my personal woodworking practice: stave-built drums, wooden flutes, and percussion hardware sharing the same shop vocabulary of segmented construction, turning, jigging, lacing, and finishing.*
 
 ## What this is
 
