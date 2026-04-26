@@ -24,7 +24,13 @@ This repository covers everything else.
 > *(Forthcoming — one section per project.)*
 
 - **Segmented woodturning** — vessels, vases, and goblet-style turnings using contrast woods in glued-up segmented blanks
+- **Wooden briefcase — segmented end-grain top** *(below)*
 - *(other projects to be added)*
+
+### Wooden briefcase — segmented end-grain top
+
+![Segmented end-grain top of a wooden briefcase, built using a cutting-board-style brick pattern](images/2021-05-10%2020.17.13.jpg)
+*A wooden briefcase whose lid is built up using a segmented end-grain panel — the same construction technique used for premium end-grain cutting boards, scaled and oriented as a brick-bond pattern. Each end-grain block reveals the tree's growth rings as a target on the surface, and the brick offset gives the panel both visual rhythm and dimensional stability across glue lines.*
 
 ## Tools
 
