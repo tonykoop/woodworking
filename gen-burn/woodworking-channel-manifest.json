@@ -1,0 +1,44 @@
+{
+  "channel": "woodworking",
+  "issue_ref": 6,
+  "model": "codex-spark",
+  "wave": 1,
+  "projects": [
+    {
+      "slug": "wooden-briefcase",
+      "name": "Wooden briefcase — segmented end-grain top",
+      "thumbnails": [
+        "images/2021-05-10 20.17.13.jpg",
+        "images/2021-05-10 20.17.55.jpg"
+      ],
+      "release_manifest": {
+        "status": "ready_for_publish",
+        "channel_notes": "End-grain briefcase hero set pending project narration."
+      }
+    },
+    {
+      "slug": "wood-turning-vessels",
+      "name": "Segmented woodturning",
+      "thumbnails": [
+        "images/2021-04-23 14.15.57.jpg",
+        "images/2021-04-23 14.16.07.jpg"
+      ],
+      "release_manifest": {
+        "status": "ready_for_publish",
+        "channel_notes": "Turned vessel series thumbnail set pending step-photo links."
+      }
+    },
+    {
+      "slug": "wooden-mallet",
+      "name": "Wooden mallet",
+      "thumbnails": [
+        "projects/mallet/wooden mallet.jpg",
+        "images/00-hero-woodworking.jpg"
+      ],
+      "release_manifest": {
+        "status": "ready_for_publish",
+        "channel_notes": "Recovered shop-tool restoration set grouped under gen-burn backlog."
+      }
+    }
+  ]
+}
