@@ -50,3 +50,4 @@ Released under [CC-BY 4.0](LICENSE) — these are my own personal projects, free
 | Repo description, license, gitignore | ✓ done |
 | Project writeups | forthcoming |
 | Hero photo | forthcoming |
+| Gen-Burn epic #2 | tracking |
