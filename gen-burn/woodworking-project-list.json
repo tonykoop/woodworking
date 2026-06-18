@@ -1,0 +1,16 @@
+{
+  "projects": [
+    "wood-turning",
+    "beehive",
+    "coffee-table",
+    "picture-frame",
+    "wooden-mallet"
+  ],
+  "credit_cost": {
+    "wood-turning": 2,
+    "beehive": 2,
+    "coffee-table": 3,
+    "picture-frame": 2,
+    "wooden-mallet": 1
+  }
+}
