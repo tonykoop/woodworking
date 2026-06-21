@@ -1,0 +1,198 @@
+# B-Roll / Motion Build Diagram Run Manifest (Issue #5)
+#
+# Feeds: agy video generation
+# Source: prompt-pack.md (Issue #3)
+# Credit log: tonykoop/StudioPipeline#113
+# Depends on: Issue #3 (prompt pack)
+#
+# Usage:
+#   agy video -p "<description>" --duration <duration_sec> --output <output_path>
+#   Set status: pending → queued → done (or failed)
+#
+# Output root: projects/gen-burn/output/video/
+# Naming convention: <project_slug>/<slot>-<id>.<ext> (mp4 or gif)
+
+schema: woodworking/broll-manifest@1.0.0
+authored_by: sonnet (Issue #3 prompt pack)
+manifest_issue: 5
+credit_ref: tonykoop/StudioPipeline#113
+output_root: projects/gen-burn/output/video
+
+projects:
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: generic-turning
+    project_type: woodturning
+    broll_loops:
+      - id: B1
+        label: "Shavings Cascade"
+        output: generic-turning/broll-B1.mp4
+        motion_type: static-with-action
+        duration_sec: 6
+        status: pending
+        description: >
+          Low-angle close-up, lathe spinning at medium RPM, a bowl gouge making a
+          light finishing pass on the exterior of a walnut bowl — thin translucent
+          shavings curl and cascade off the tool in slow motion (120fps playback at
+          24), backlit by a single warm tungsten source, dark workshop background,
+          shavings catching the light like ribbon. Loop point: seamless cut between
+          tool entering and exiting the cut.
+      - id: B2
+        label: "Orbital Turntable Reveal"
+        output: generic-turning/broll-B2.mp4
+        motion_type: orbit
+        duration_sec: 8
+        status: pending
+        description: >
+          Camera on a motorized turntable slowly orbiting 360 degrees around a
+          completed wax-buffed walnut bowl on a charcoal paper surface, studio
+          diffuse overhead light, camera at 30-degree elevation, shallow dof so only
+          the near face is sharp as it passes — emphasizes the figure and form from
+          all angles. Speed: one full revolution in 8 seconds.
+      - id: B3
+        label: "Oil Application Wipe"
+        output: generic-turning/broll-B3.mp4
+        motion_type: push-in
+        duration_sec: 4
+        status: pending
+        description: >
+          Tight macro push-in on the surface of a walnut bowl as a danish-oil-soaked
+          rag is slowly drawn across the frame from left to right — the grain
+          dramatically deepens in color behind the rag as the oil absorbs in real
+          time, side-raking light reveals the texture, 4K macro lens, very shallow
+          dof, warm ambient. Loop: rag exits right, cut back to dry surface on left.
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: generic-beehive
+    project_type: beehive
+    broll_loops:
+      - id: B1
+        label: "Morning Hive Entrance Time-Lapse"
+        output: generic-beehive/broll-B1.mp4
+        motion_type: time-lapse
+        duration_sec: 4
+        status: pending
+        description: >
+          Time-lapse, camera locked on tripod at ground level, framing the landing
+          board and entrance of a white Langstroth hive in a garden, 30-second
+          real-time compressed to 4 seconds — bees streaming in and out, golden
+          morning light raking across the entrance, dew on the nearby grass, shallow
+          dof so bees are the sharpest element. Loop: seamless morning → activity →
+          morning.
+      - id: B2
+        label: "Box Joint Assembly Push-In"
+        output: generic-beehive/broll-B2.mp4
+        motion_type: push-in
+        duration_sec: 6
+        status: pending
+        description: >
+          Macro push-in: two sides of a cedar hive box being pressed together at the
+          corner, finger joints aligning and interlocking in slow motion — the grain
+          of the wood filling the frame, side-raking workshop light catching each
+          finger as it seats, shallow dof, no glue (dry-fit), sound design cue:
+          satisfying wood-on-wood click. Duration 6 seconds, loop at the moment both
+          faces are flush.
+      - id: B3
+        label: "Frame Wiring Close-Up"
+        output: generic-beehive/broll-B3.mp4
+        motion_type: static-with-action
+        duration_sec: 6
+        status: pending
+        description: >
+          Close-up static shot of a Langstroth frame being wired — hands threading
+          stainless wire through the wire holes of a pine frame, the wire tensioned
+          and tied off, workshop light, mid dof so the wire and hands are sharp
+          against a softly blurred shop background. Loop point: wire threading
+          continuous from one side to the other.
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: generic-coffee-table
+    project_type: coffee_table
+    broll_loops:
+      - id: B1
+        label: "Planer Shavings Ribbon"
+        output: generic-coffee-table/broll-B1.mp4
+        motion_type: static-with-action
+        duration_sec: 6
+        status: pending
+        description: >
+          Side-angle static shot at bench height: a white oak board emerging from the
+          outfeed side of a thickness planer — a continuous ribbon of shaving curling
+          up and away from the discharge, warm workshop fluorescent overhead light,
+          mid dof on the board surface, the grain emerging freshly planed and pale.
+          Loop: board feeds through continuously.
+      - id: B2
+        label: "Through-Tenon Wedge Drive"
+        output: generic-coffee-table/broll-B2.mp4
+        motion_type: static-with-action
+        duration_sec: 4
+        status: pending
+        description: >
+          Macro static shot: a contrasting walnut wedge being tapped with a mallet
+          into the kerf of a white oak through-tenon protruding from the table leg —
+          each mallet strike causes the wedge to seat slightly deeper, the tenon
+          spreading slightly against the mortise walls, side-raking workshop light,
+          very shallow dof, intimate-craft mood. Loop: wedge driven from flush to
+          fully seated.
+      - id: B3
+        label: "Surface Grain Reveal Pan"
+        output: generic-coffee-table/broll-B3.mp4
+        motion_type: pan
+        duration_sec: 6
+        status: pending
+        description: >
+          Camera slowly pans across the white oak tabletop surface from left to
+          right, low angle (5-degree elevation), just skimming the surface — the
+          ray-fleck patterns and figure catching a raking side light as the camera
+          moves, shallow dof with grain in crisp focus, warm linen background softly
+          out of focus. Loop: right edge to left edge, seamless cut back.
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: generic-picture-frame
+    project_type: picture_frame
+    broll_loops:
+      - id: B1
+        label: "Miter Cut Dust Burst"
+        output: generic-picture-frame/broll-B1.mp4
+        motion_type: static-with-action
+        duration_sec: 4
+        status: pending
+        description: >
+          Front-angle static shot at chop-saw blade height: the 45-degree miter cut
+          descending through a walnut frame moulding strip — fine dust erupting in a
+          burst from the cut, blade guard in place, the cut face bright where the
+          blade just passed, warm overhead workshop light, shallow dof on the cutting
+          zone. Loop: cut starts and blade lifts, cut begins again.
+      - id: B2
+        label: "Corner Squeeze-Out Wipe"
+        output: generic-picture-frame/broll-B2.mp4
+        motion_type: static-with-action
+        duration_sec: 6
+        status: pending
+        description: >
+          Macro static shot of a miter corner on a glued walnut frame: a small
+          damp cloth being used to wipe away glue squeeze-out from the joint line
+          — the walnut grain visible under the thin glue film, wiping motion slow
+          and deliberate, side-raking light, very shallow dof. Loop: wiping motion
+          repeats as fresh squeeze-out appears.
+      - id: B3
+        label: "Frame Reflection Turntable"
+        output: generic-picture-frame/broll-B3.mp4
+        motion_type: orbit
+        duration_sec: 8
+        status: pending
+        description: >
+          Camera orbits slowly around a completed walnut frame standing upright on
+          a charcoal paper surface, the frame's glossy oil-finish surface reflecting
+          the studio soft-box as the camera angle changes — highlighting the miter
+          joint precision and the depth of the walnut finish. Shallow dof, minimal-
+          gallery mood, 360-degree orbit in 8 seconds.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Credit summary (estimated)
+# 3 b-roll clips × 4 projects = 12 video generations
+# Video gen is higher credit weight than image gen (~3-5× per clip)
+# Estimated: 36-60 credits from tonykoop/StudioPipeline#113 budget
+# Run: agy video -p "<description>" --duration <duration_sec> --output <output_root>/<output>
+# Note: motion_type hints are for agy prompt augmentation, not a CLI flag
+# ─────────────────────────────────────────────────────────────────────────────
