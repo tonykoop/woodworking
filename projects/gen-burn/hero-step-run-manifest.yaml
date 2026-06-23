@@ -1,0 +1,466 @@
+# Hero + Step Illustration Run Manifest (Issue #4)
+#
+# Feeds: agy image generation
+# Source: prompt-pack.md (Issue #3)
+# Credit log: tonykoop/StudioPipeline#113
+#
+# Usage:
+#   agy -p "<prompt>" --output <output_path> --aspect 4:3
+#   Set status: pending → queued → done (or failed)
+#
+# Output root: projects/gen-burn/output/images/
+# Naming convention: <project_slug>/<slot>-<id>.<ext>
+
+schema: woodworking/hero-step-manifest@1.0.0
+authored_by: sonnet (Issue #3 prompt pack)
+manifest_issue: 4
+credit_ref: tonykoop/StudioPipeline#113
+output_root: projects/gen-burn/output/images
+
+projects:
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: generic-turning
+    project_type: woodturning
+    style_tokens:
+      camera: "45-degree three-quarter"
+      dof: shallow
+      background: "workshop bench raw pine"
+      mood: intimate-craft
+    hero_prompts:
+      - id: H1
+        label: "Walnut Bowl, Finish Turned, Side-Raking Light"
+        output: generic-turning/hero-H1.jpg
+        status: pending
+        prompt: >
+          Product photograph of a hand-turned walnut bowl on a worn pine workbench,
+          freshly finish-turned with tool marks still faintly visible on the interior,
+          dramatic raking side light from the left casting long shadows that reveal
+          the end-grain figure, shallow depth of field with the rim sharp and the
+          interior falling into soft bokeh, warm amber tones, 45-degree three-quarter
+          view, mood: intimate workshop craft, no props
+      - id: H2
+        label: "Maple Vase, Wax-Buffed Final Finish, Overhead"
+        output: generic-turning/hero-H2.jpg
+        status: pending
+        prompt: >
+          Flat-lay overhead photograph of a tall maple vase form, freshly hand-turned
+          and wax-buffed to a satin sheen, white infinity cove background, studio
+          overhead diffuse lighting with a single fill card, creamy figured maple
+          grain with faint curly figure, deep depth of field f/11, clean
+          minimal-gallery mood, centered composition with subtle drop shadow
+      - id: H3
+        label: "Cherry Platter, Danish Oil Stage, Natural Window Light"
+        output: generic-turning/hero-H3.jpg
+        status: pending
+        prompt: >
+          45-degree three-quarter view of a wide cherry platter resting on a linen
+          cloth, mid-oiling stage — one half still dry-sanded showing pale wood,
+          the other half freshly wiped with danish oil showing deep amber-red grain,
+          directional window light from the right with soft shadow, mid depth of
+          field f/5.6, rustic-workshop mood, hands not shown
+      - id: H4
+        label: "Padauk Pepper Mill, Turned Pair, Studio 3-Point"
+        output: generic-turning/hero-H4.jpg
+        status: pending
+        prompt: >
+          Studio product photograph of a matched pair of padauk and maple pepper mills
+          on a charcoal seamless background, both lathe-turned with crisp coves and
+          beads, padauk showing its vivid red-orange heartwood, studio 3-point
+          lighting — key at 45 degrees, fill opposite, rim light behind, shallow
+          dof f/2.8 on the front mill, bold-product mood
+      - id: H5
+        label: "Segmented Walnut/Maple Bowl, Gallery Shot"
+        output: generic-turning/hero-H5.jpg
+        status: pending
+        prompt: >
+          Eye-level profile photograph of a segmented bowl with alternating dark
+          walnut and light maple rings, finished to a high gloss with spray lacquer,
+          charcoal seamless paper background, overhead-diffuse soft box, the
+          reflection of the bowl visible on the lacquer surface, deep depth of field,
+          minimal-gallery mood, centered symmetrical composition
+    step_set:
+      - step: 1
+        label: "Blank Preparation"
+        output: generic-turning/step-01.jpg
+        status: pending
+        prompt: >
+          Close-up macro photograph on a pine workbench: a rough bandsaw-cut bowl
+          blank of walnut, approximately 8 inches diameter and 4 inches thick,
+          freshly cut with visible saw marks on the face, bark edge on one side,
+          end grain showing annual rings, harsh overhead workshop fluorescent light,
+          deep dof, no hands, label area at bottom for "Step 1: Prepare Blank"
+      - step: 2
+        label: "Mounting on Lathe"
+        output: generic-turning/step-02.jpg
+        status: pending
+        prompt: >
+          Eye-level photograph showing a walnut bowl blank mounted on a lathe
+          faceplate with four wood screws visible, lathe tailstock brought up for
+          support, workshop background with tool rack softly out of focus,
+          side-raking light, mid dof f/5.6, intimate-craft mood
+      - step: 3
+        label: "Rough Turning Exterior"
+        output: generic-turning/step-03.jpg
+        status: pending
+        prompt: >
+          45-degree three-quarter view of a bowl blank being rough-turned on the
+          lathe — visible tool marks spiraling around the cylinder, wood shavings
+          piled on the lathe bed below, a bowl gouge positioned at the rest (tool
+          only, no hands required), raking workshop light from the left, warm
+          incandescent color temperature, mid dof
+      - step: 4
+        label: "Hollowing the Interior"
+        output: generic-turning/step-04.jpg
+        status: pending
+        prompt: >
+          Overhead close-up of the lathe chuck with the bowl blank reversed, a
+          swept-back bowl gouge entering the interior — shavings curling away, the
+          hollow form emerging with thick walls still to be refined, side-raking
+          light casting the shadow of the gouge into the hollow, shallow dof on
+          the cutting edge, intimate-craft mood
+      - step: 5
+        label: "Sanding Through Grits"
+        output: generic-turning/step-05.jpg
+        status: pending
+        prompt: >
+          Macro close-up of hands (gloved, partial frame) holding a folded sheet of
+          sandpaper against the spinning interior of a walnut bowl, lathe running,
+          fine dust haze visible in backlight, 220-grit stage, surface showing
+          emerging smoothness, window-natural light, shallow dof f/2.0
+      - step: 6
+        label: "First Oil Coat Applied"
+        output: generic-turning/step-06.jpg
+        status: pending
+        prompt: >
+          45-degree three-quarter view of the finished-turned walnut bowl sitting off
+          the lathe on a linen cloth, a folded shop rag dark with danish oil resting
+          beside it, the bowl surface half-oiled showing the dramatic color shift —
+          pale dry wood on left, rich dark amber on right, golden-hour warm light,
+          mid dof, earthy-organic mood
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: generic-beehive
+    project_type: beehive
+    style_tokens:
+      camera: "eye-level profile"
+      dof: mid
+      background: "outdoor grass/stone"
+      mood: rustic-workshop
+    hero_prompts:
+      - id: H1
+        label: "Cedar Langstroth Hive, Golden Hour, Field Setting"
+        output: generic-beehive/hero-H1.jpg
+        status: pending
+        prompt: >
+          Eye-level profile photograph of a completed Western Red Cedar Langstroth
+          beehive — two deep supers and one honey super — sitting on cinder-block
+          stand in a wildflower meadow, golden-hour sunlight raking across the box
+          joints at the corners highlighting the finger joint detail, natural
+          weathered look with no paint, cedar showing silver-grey tone, mid dof
+          f/8, bees visible as motion blur at the entrance, earthy-organic mood
+      - id: H2
+        label: "Hive Components Exploded Flat-Lay"
+        output: generic-beehive/hero-H2.jpg
+        status: pending
+        prompt: >
+          Overhead flat-lay on outdoor weathered cedar deck boards showing all
+          Langstroth hive components separated and arranged in assembly order —
+          bottom board, deep super 1, deep super 2, honey super, inner cover,
+          telescoping outer cover, frames with foundation — all raw unfinished pine,
+          diffuse overcast sky lighting from above, deep dof f/16, minimal-gallery
+          mood, labels not shown
+      - id: H3
+        label: "Box Joint Corner Detail, Studio"
+        output: generic-beehive/hero-H3.jpg
+        status: pending
+        prompt: >
+          Macro close-up of the corner box joint on a cedar hive super, alternating
+          finger joints interlocked and glued, fresh sanding marks visible across the
+          end grain, studio overhead-diffuse light, shallow dof f/2.8 so only the
+          outermost joint face is sharp, white background softly out of focus,
+          bold-product mood
+      - id: H4
+        label: "Painted White Hive, Garden Setting"
+        output: generic-beehive/hero-H4.jpg
+        status: pending
+        prompt: >
+          45-degree three-quarter view of a painted white Langstroth hive in a
+          backyard garden setting, bright mid-morning natural light, white paint
+          slightly chalky suggesting weathering, cherry blossoms or garden flowers
+          softly bokeh in the background, mid dof f/5.6, intimate-craft mood
+    step_set:
+      - step: 1
+        label: "Milling Lumber to Width"
+        output: generic-beehive/step-01.jpg
+        status: pending
+        prompt: >
+          Eye-level photograph of a table saw with a cedar board being ripped to the
+          correct hive-box width — blade guard in place, push stick visible, workshop
+          background, overhead fluorescent lighting, mid dof, rustic-workshop mood,
+          no hands required in frame
+      - step: 2
+        label: "Cutting Box Joints"
+        output: generic-beehive/step-02.jpg
+        status: pending
+        prompt: >
+          Close-up of a router table or table-saw box-joint jig with a pine hive-box
+          side piece being indexed through — finger joints freshly cut, sawdust on
+          the table surface, side-raking workshop light highlighting the joint
+          geometry, shallow dof on the joint, intimate-craft mood
+      - step: 3
+        label: "Dry-Fitting the Box"
+        output: generic-beehive/step-03.jpg
+        status: pending
+        prompt: >
+          45-degree overhead view of a hive super box being dry-fitted — four sides
+          interlocked without glue, clamps lightly holding, pine or cedar, workshop
+          bench background, mid dof, showing the rabbet ledge on the interior for
+          frame rest, natural window light
+      - step: 4
+        label: "Glue-Up and Clamping"
+        output: generic-beehive/step-04.jpg
+        status: pending
+        prompt: >
+          Workshop bench scene: a hive box clamped with four bar clamps after
+          glue-up, glue squeeze-out visible at the box joint lines, square sitting
+          on top to verify, cedar or pine, warm incandescent work light, mid dof
+          f/5.6, intimate-craft mood
+      - step: 5
+        label: "Painting Exterior"
+        output: generic-beehive/step-05.jpg
+        status: pending
+        prompt: >
+          Eye-level photograph of a finished hive box being painted white with a
+          4-inch brush — bristles loaded with exterior latex paint, one side freshly
+          painted white against the raw wood of the adjacent face, outdoor setting
+          on a sawhorse, natural light, mid dof, rustic-workshop mood
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: generic-coffee-table
+    project_type: coffee_table
+    style_tokens:
+      camera: "45-degree three-quarter"
+      dof: mid
+      background: "warm linen textile"
+      mood: bold-product
+    hero_prompts:
+      - id: H1
+        label: "White Oak Coffee Table, Natural Oil, Living Room Context"
+        output: generic-coffee-table/hero-H1.jpg
+        status: pending
+        prompt: >
+          45-degree three-quarter lifestyle photograph of a white oak coffee table
+          in a modern living room, herringbone or rift-sawn ray-fleck visible in the
+          oak surface, finished with hardwax oil — satin sheen that catches the
+          natural window light from the right, tapered legs with visible
+          through-tenon wedges at the top, a single art book and small plant as
+          props, mid dof f/5.6, warm afternoon window light, bold-product mood
+      - id: H2
+        label: "Walnut Table, High Contrast, Dark Background"
+        output: generic-coffee-table/hero-H2.jpg
+        status: pending
+        prompt: >
+          Product photograph of a black walnut coffee table against a deep charcoal
+          background, studio 3-point lighting — key light at 45 degrees skimming
+          the surface to reveal grain figure, the walnut showing rich chocolate
+          brown to purple-black heartwood variation, hand-rubbed oil finish, tapered
+          legs, clean minimal-gallery mood, deep dof f/11, no props
+      - id: H3
+        label: "Mortise-and-Tenon Detail, Side Light"
+        output: generic-coffee-table/hero-H3.jpg
+        status: pending
+        prompt: >
+          Close-up macro of the apron-to-leg joint on a white oak coffee table, the
+          through-tenon protruding slightly past the leg face with a contrasting
+          walnut wedge driven in, side-raking light emphasizing the grain transition
+          between apron and leg, shallow dof f/2.0, warm linen cloth softly out of
+          focus in background, intimate-craft mood
+      - id: H4
+        label: "Breadboard End Detail, Natural Light"
+        output: generic-coffee-table/hero-H4.jpg
+        status: pending
+        prompt: >
+          Eye-level profile shot of the short end of a coffee table, focusing on
+          the breadboard end connection — the breadboard piece slightly proud of
+          the tabletop face, figure-8 fastener slots visible on underside (optional),
+          natural window light, ray-fleck oak surface catching the light, mid dof,
+          warm workshop linen background, bold-product mood
+      - id: H5
+        label: "Ash Table, Raw Workshop Context"
+        output: generic-coffee-table/hero-H5.jpg
+        status: pending
+        prompt: >
+          45-degree overhead view of an ash coffee table top resting on sawhorses
+          in a workshop, surface at the 220-grit final sanding stage — orbital
+          sander sitting on the bench in background, ash showing open pore texture
+          and cathedral grain, harsh overhead shop light with a warm tungsten
+          practical lamp adding fill, deep dof, rustic-workshop mood
+    step_set:
+      - step: 1
+        label: "Dimensioning Lumber"
+        output: generic-coffee-table/step-01.jpg
+        status: pending
+        prompt: >
+          Workshop scene: a white oak board passing through a thickness planer —
+          machine in foreground, shavings ejecting from the discharge chute, the
+          board surface showing the freshly planed face, overhead workshop
+          fluorescent light, mid dof, rustic-workshop mood
+      - step: 2
+        label: "Laying Out Mortise Locations"
+        output: generic-coffee-table/step-02.jpg
+        status: pending
+        prompt: >
+          Overhead close-up of a white oak apron piece on a workbench with mortise
+          layout lines penciled in — a marking gauge track visible, combination
+          square resting adjacent, natural window light, mid dof, workshop bench
+          background, intimate-craft mood
+      - step: 3
+        label: "Chopping Mortises"
+        output: generic-coffee-table/step-03.jpg
+        status: pending
+        prompt: >
+          Close-up of a hollow chisel mortiser drilling a square mortise into an
+          oak table leg, chip clearing in progress, sawdust on the machine table,
+          workshop fluorescent overhead light, mid dof f/5.6, rustic-workshop mood
+      - step: 4
+        label: "Cutting Tenons at the Table Saw"
+        output: generic-coffee-table/step-04.jpg
+        status: pending
+        prompt: >
+          Eye-level photograph at the table saw: a tenon jig holding a white oak
+          apron piece vertically while the blade cuts the tenon cheek — blade guard
+          removed for jig use (safe setup), workshop background, side-raking shop
+          light, mid dof, rustic-workshop mood
+      - step: 5
+        label: "Dry-Fitting the Base"
+        output: generic-coffee-table/step-05.jpg
+        status: pending
+        prompt: >
+          45-degree three-quarter view of a coffee table base dry-fitted — four
+          legs and four aprons assembled without glue, the through-tenon wedge
+          slots visible, workshop floor, natural window light, mid dof f/8,
+          bold-product mood
+      - step: 6
+        label: "Final Oiled Surface"
+        output: generic-coffee-table/step-06.jpg
+        status: pending
+        prompt: >
+          Close-up macro of the white oak tabletop surface after hardwax oil
+          application — pores filled, ray-fleck catching the light, satin finish,
+          side-raking window light, shallow dof f/2.8, warm linen cloth in
+          background, bold-product mood
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  - slug: generic-picture-frame
+    project_type: picture_frame
+    style_tokens:
+      camera: "45-degree three-quarter"
+      dof: shallow
+      background: "charcoal seamless paper"
+      mood: minimal-gallery
+    hero_prompts:
+      - id: H1
+        label: "Walnut Frame, Miter Detail, White Background"
+        output: generic-picture-frame/hero-H1.jpg
+        status: pending
+        prompt: >
+          Studio product photograph of a hand-made walnut picture frame on a white
+          seamless background, showcasing the tight miter joints at all four corners,
+          a thin contrasting maple spline visible at each mitered corner, overhead
+          diffuse studio light, frame leaning at 10 degrees, shallow dof f/2.8
+          on the front face, minimal-gallery mood, no art inside frame
+      - id: H2
+        label: "Oak Frame with Art, Lifestyle Setting"
+        output: generic-picture-frame/hero-H2.jpg
+        status: pending
+        prompt: >
+          45-degree three-quarter lifestyle photograph of a white oak frame
+          containing a botanical print, hanging on a warm white plaster wall with
+          natural window light from the left, ray-fleck oak showing in the frame
+          face, the frame casting a gentle shadow, mid dof f/5.6, intimate-craft
+          mood, clean composition
+      - id: H3
+        label: "Spline Miter Exploded View, Workshop"
+        output: generic-picture-frame/hero-H3.jpg
+        status: pending
+        prompt: >
+          Overhead flat-lay on a workshop bench: four walnut frame pieces arranged
+          with the four contrasting maple splines pulled slightly out of their
+          slots — exploded-view composition showing the spline joinery clearly,
+          one spline darkened with glue, workshop bench raw pine background,
+          side-raking light, mid dof f/8, intimate-craft mood
+      - id: H4
+        label: "Cherry Frame, Golden-Hour Glow"
+        output: generic-picture-frame/hero-H4.jpg
+        status: pending
+        prompt: >
+          Eye-level profile of a cherry picture frame on a warm linen surface,
+          golden-hour light from a west window, the cherry showing its warm
+          reddish-amber tone with visible figure, oil finish satin sheen, shallow
+          dof, the frame slightly angled toward camera, earthy-organic mood
+    step_set:
+      - step: 1
+        label: "Routing the Moulding Profile"
+        output: generic-picture-frame/step-01.jpg
+        status: pending
+        prompt: >
+          Eye-level photograph of a router table with a walnut strip being passed
+          over a cove-and-roundover bit to cut the frame moulding profile — router
+          table fence set, featherboards in place, dust collection hose visible,
+          workshop fluorescent light, mid dof, intimate-craft mood
+      - step: 2
+        label: "Routing the Rabbet"
+        output: generic-picture-frame/step-02.jpg
+        status: pending
+        prompt: >
+          Close-up of the router table cutting a rabbet on the back face of a
+          walnut moulding strip — the L-shaped rabbet profile visible on the
+          completed section, bit height and fence gap clearly showing, workshop
+          overhead light, mid dof f/5.6, rustic-workshop mood
+      - step: 3
+        label: "Mitering at the Chop Saw"
+        output: generic-picture-frame/step-03.jpg
+        status: pending
+        prompt: >
+          45-degree view of a compound miter saw set to 45 degrees, cutting the
+          end of a walnut frame moulding — miter cut in progress with the blade
+          down, fine dust visible, a stop block clamped to the fence for repeatable
+          length, overhead shop light, mid dof, rustic-workshop mood
+      - step: 4
+        label: "Spline Slot on Router Table"
+        output: generic-picture-frame/step-04.jpg
+        status: pending
+        prompt: >
+          Close-up of a miter corner of a walnut frame being guided over a
+          slot-cutting bit on the router table — the 45-degree corner face resting
+          on the table, the kerf slot being cut into the mitered face for the
+          maple spline, side-raking light, shallow dof on the cut, intimate-craft
+          mood
+      - step: 5
+        label: "Glue-Up with Band Clamp"
+        output: generic-picture-frame/step-05.jpg
+        status: pending
+        prompt: >
+          Overhead view of a walnut picture frame in a band (strap) clamp during
+          glue-up — all four corners pulled tight, glue squeeze-out at the miter
+          joints, maple splines visible at corners, workshop bench, natural window
+          light, mid dof f/8, intimate-craft mood
+      - step: 6
+        label: "Finish Coat Application"
+        output: generic-picture-frame/step-06.jpg
+        status: pending
+        prompt: >
+          45-degree view of a walnut frame lying flat on a workbench, a foam
+          applicator pad applying a thin coat of danish oil to the top face —
+          the oiled section showing the deep warm walnut color against the
+          unfinished section, golden-hour window light, mid dof, earthy-organic mood
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Credit summary (estimated)
+# 5 hero × 4 projects = 20 image slots
+# 5-6 steps × 4 projects = 21 image slots
+# Total: ~41 image generations
+# At ~1 credit/image: 41 credits from tonykoop/StudioPipeline#113 budget
+# Run: agy -p "<prompt>" --output <output_root>/<output>
+# ─────────────────────────────────────────────────────────────────────────────
